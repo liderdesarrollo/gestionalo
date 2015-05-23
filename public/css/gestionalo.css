@@ -1,0 +1,31 @@
+.sidenav_profile{
+    border-left: 4px solid rgb(0, 196, 197);
+}
+
+.container_group {
+  padding: 11px;
+}
+
+h1.title_group {
+    font-size: 22px;
+    line-height: inherit;
+    margin: 0;
+    color: rgb(20, 41, 62);
+    font-style: italic;
+}
+
+span.label_caption {
+  float: left;
+  width: 100%;
+  color: rgb(146, 150, 154);
+  line-height: 1;
+  font-size: 17px;
+}
+
+.label_group {
+  float: left;
+  width: 100%;
+  color: rgb(20, 41, 62);
+  font-weight: bold;
+  font-size: 21px;
+}
