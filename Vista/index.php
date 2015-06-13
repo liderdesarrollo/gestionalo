@@ -320,5 +320,12 @@
 		       
 		<script src="<?= PUBLIC_FOLDER ?>js/materialize.js"></script>
 		<script type="text/javascript" src="<?= PUBLIC_FOLDER ?>js/app.js"></script>
+		<script>
+$( document ).ready(function() {
+	$('.menu h3').click(function(){
+		$('.menu-list').slideToggle("50");
+	});
+});
+</script>
 	</body>
 </html>

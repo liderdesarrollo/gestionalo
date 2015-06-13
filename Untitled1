@@ -5,10 +5,9 @@
 	<script type="text/javascript" src="../public/js/main_02a.js"></script>
 </head>
 <body>
-	
+
 	<form class="form-mod-user">
-		<div class="id_user"><?php echo $_GET['User']; ?></div>
-		
+	
 		<input type="text" name="nombre" id="nombre" placeholder="Nombre"><br>
 		
 		<input type="text" name="apellido" id="apellido" placeholder="Apellido"><br>
@@ -39,7 +38,7 @@
 			
 		</select><br>
 		
-		<select name="rol" id="rol" disabled>
+		<select name="rol" id="rol">
 			<option disabled selected>Rol</option>
 			<option>Administrador</option>
 			<option>Otro usuario</option>

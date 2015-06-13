@@ -19,7 +19,7 @@ body{
 }
 .menu-ges{
 	display: inline-block;
-	width: 530px;
+	width: 440px;
 	margin: 0 auto;
 	margin-left:21%;
 }
@@ -200,6 +200,9 @@ body{
 }
 .flecha:hover > div{
 	border-color: white;
+	width: 40%;
+	height: 40%;
+	top: 28%;
 }
 .flecha div{
 	width: 50%;

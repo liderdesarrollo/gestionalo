@@ -14,17 +14,35 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>Gestionalo -- Moderns App</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <!-- Hojas De Estilos -->
+        <!-- Librerias CSS -->
         <link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/materialize.min.css">
+        <link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/animate.css">
+        
+        <!-- Hojas De Estilos -->
         <link rel="stylesheet" type="text/css" href="<?= PUBLIC_FOLDER ?>css/style.css">
         <link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/devices/queries.css">
         <link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/home.css">
+        <link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/qs.css">
+        <link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/blog.css">
+        
+        <!-- Librerias JavaScript -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>
+          window.jQuery || document.write('<script src="/maqueta/maqueta/js/vendor/jquery-1.11.1.min.js"><\/script>');
+        </script>
+        <script src="<?= PUBLIC_FOLDER ?>js/materialize.min.js"></script>
+        <script src="<?= PUBLIC_FOLDER ?>js/jquery.viewportchecker.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+    		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
+        
+        <!--<script>window.history.pushState(null,null,"/!#login");</script>-->
     </head>
-    <body>
+    <body ng-app="gestionalo_app">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -35,20 +53,20 @@
                 <nav>
                   <div class="nav-wrapper">
                     <a href="#!" class="brand-logo">
-          	          	<img style="max-height: 100%; margin: 0!important" src="<?= PUBLIC_FOLDER ?>img/logo_gestionalo.png" class="responsive-img" alt="GESTIONALO INTRANET EMPRESARIAL" />
+          	          	<img style="max-height: 100%; margin: 0!important; transition: .5s" src="<?= PUBLIC_FOLDER ?>img/logo_gestionalo.png" class="responsive-img" alt="GESTIONALO INTRANET EMPRESARIAL" />
                     </a>
                     <div class="menu-ges">
                   		<nav>
                   			<ul>
-                  				<li><a href="#" class="waves-effect waves-light btn">Qui&eacute;nes Somos</a></li>
+                  				<li><a href="/Vista/login.php#/quienes-somos" class="waves-effect waves-light btn">Qui&eacute;nes Somos</a></li>
                   				<li><a href="#" class="waves-effect waves-light btn">Precios</a></li>
-                  				<li><a href="#" class="waves-effect waves-light btn">Blog</a></li>
+                  				<li><a href="/Vista/login.php#/blog" class="waves-effect waves-light btn">Blog</a></li>
                   				<li><a href="#" class="waves-effect waves-light btn">Soporte</a></li>
                   			</ul>
                   		</nav>
                 	  </div>
                 	  <ul class="right hide-on-med-and-down">
-                      <a type="button" class="logIn waves-effect waves-light btn">Ingreso</button>
+                      <a type="button" class="logIn waves-effect waves-light btn">Ingreso</a>
                       <a class="btn modal-trigger waves-effect waves-light btn modal-trigger signUp">Registro</a>
                     </ul>
                   </div>
@@ -74,101 +92,7 @@
                 </div>
             </div>
           </header>
-          <div class="sheet">
-    
-            <!-- Main jumbotron for a primary marketing message or call to action -->
-            <div class="all-ges">
-              <div class="parallax-container">
-                <div class="parallax">
-                  <img src="<?= PUBLIC_FOLDER ?>img/gestionalo.jpg">
-                </div>
-              </div>
-            </div>
-            <div class="nets">
-              <div class="container">
-              	<div class="row">
-              		<div class="col m4"><span class="int"></span><span class="phone"></span></div>
-              		<div class="col m4">
-              			<span class="flecha">
-              			  <div></div>
-              			</span>
-              		</div>
-              		<div class="col m4 ">
-              			<div class="redes">
-              				<a href="http://twitter.com/gestionalo_co"  target="_blank" title="Gestionalo On Twitter"><span class="tw"></span></a>
-              				<a href="http://facebook.com/gestionalo" target="_blank" title="Gestionalo On Facebook"><span class="fb"></span></a>
-              				<a href="http://youtube.com/zopplabs"  target="_blank" title="Gestionalo On Youtube"><span class="yt"></span></a>
-              			</div>
-              		</div>
-              	</div>
-              </div>
-            </div>
-          </div>
-          <div class="sheet">
-            <div class="a">
-              <div class="container">
-                <div class="row" style="margin: 0">
-                    <div class="col m5 s12">
-                      <img src="../public/images/cel_app.png" class="responsive-img" style="margin-top: 2.5em"/>
-                    </div>
-                    <div class="col m1 s12">&nbsp;</div>
-                    <div class="col m6 s12">
-                      <div class="text">
-                        <h5>Tus proyectos en cualquier lugar donde estés.</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                        quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                        ut aliquip ex ea commodo consequat.</p>
-                        <a href="#">Ver Más...</a>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="b">
-              <div class="files">
-                <img src="../public/images/files.png" style="width: 100%; height: auto;"></img>
-              </div>
-            </div>
-          </div>
-          <div class="sheet" style="padding: 0">
-            <div class="a">
-              <div class="message">
-                <div class="container">
-                  <div class="row">
-                    <div class="col m12">
-                      <hgruop>
-                        <h2>Lo que más  me gusta de Gestionalo es que se pueden cargar múltiples proyectos dentro de una única plataforma.</h2>
-                        <h6>Juan C. Ruiz, Bogotá, Colombia</h6>
-                      </hgruop>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="b">
-              <div class="container">
-                <div class="row" style="margin: 0">
-                    <div class="col m5 s12">
-                      <img src="../public/images/cel_app_.png" class="responsive-img" style="margin-top: 2.5em"/>
-                    </div>  
-                    <div class="col m1 s12">&nbsp;</div>
-                    <div class="col m6 s12">  
-                      <div class="text" style="padding-top: 15%!important">
-                        <h5>Gestiona tareas de forma fácil.</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-                        quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-                        ut aliquip ex ea commodo consequat.</p>
-                        <a href="#">Ver Más...</a>
-                      </div>
-                    </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div ng-view></div>
           <footer id="footer">
             <div class="f_register">
               <div class="container">
@@ -188,7 +112,7 @@
                       <li><a href="#">Seguridad</a></li>
                       <li><a href="#">Comprar</a></li>
                     </ul>
-                    <span class="colombia"><div>&nbsp;</div><div></div><div></div></span><span class="language">Español&nbsp;| </span>
+                    <span class="colombia"><div></div><div></div><div></div></span><span class="language">Español&nbsp;| </span>
                   </div>
                   <div>
                     <ul>
@@ -205,7 +129,7 @@
                     </ul>
                   </div>
                   <div>
-                    <h6>Recomendamos a los consumidores (usuarios) que lean los <a href="#">términos y condiciones</a>cuidadosamente</h6>
+                    <h6>Recomendamos a los consumidores (usuarios) que lean los <a href="#">términos y condiciones </a>cuidadosamente</h6>
                   </div>
                 </div>
               </div>
@@ -249,14 +173,9 @@
       </div>
       
         <!-- Scripts -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>
-          window.jQuery || document.write('<script src="/maqueta/maqueta/js/vendor/jquery-1.11.1.min.js"><\/script>');
-        </script>
-        <script src="<?= PUBLIC_FOLDER ?>js/materialize.min.js"></script>
-        <script src="<?= PUBLIC_FOLDER ?>js/plugins.js"></script>
         <script src="<?= PUBLIC_FOLDER ?>js/main.js"></script>
         <script src="<?= PUBLIC_FOLDER ?>js/actions.js"></script>
+        <script src="<?= PUBLIC_FOLDER ?>js/routes.js"></script>
 
 
     </body>

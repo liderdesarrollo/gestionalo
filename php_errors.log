@@ -1433,3 +1433,285 @@ could not connect to server: Connection refused
 [23-May-2015 14:32:04 UTC] PHP Fatal error:  Call to undefined method Utils::validar_usuario() in /home/ubuntu/workspace/Controlador/Controlador_03d.php on line 9
 [23-May-2015 14:32:04 UTC] PHP Fatal error:  Call to undefined method Utils::validar_usuario() in /home/ubuntu/workspace/Controlador/Controlador_03d.php on line 9
 [23-May-2015 14:32:04 UTC] PHP Fatal error:  Call to undefined method Utils::validar_usuario() in /home/ubuntu/workspace/Controlador/Controlador_03d.php on line 9
+[23-May-2015 16:19:34 UTC] PHP Notice:  Undefined index: _pai in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 61
+[23-May-2015 16:19:37 UTC] PHP Notice:  Undefined index: _pai in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 61
+[23-May-2015 16:28:24 UTC] PHP Notice:  Undefined variable: pais in /home/ubuntu/workspace/Modelo/functions_02a.php on line 90
+[23-May-2015 16:28:24 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation "municipio" does not exist
+LINE 1: SELECT * FROM municipio
+                      ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 16:28:24 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 16:28:29 UTC] PHP Notice:  Undefined variable: pais in /home/ubuntu/workspace/Modelo/functions_02a.php on line 90
+[23-May-2015 16:28:29 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation "municipio" does not exist
+LINE 1: SELECT * FROM municipio
+                      ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 16:28:29 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 16:29:11 UTC] PHP Notice:  Undefined variable: pais in /home/ubuntu/workspace/Modelo/functions_02a.php on line 90
+[23-May-2015 16:29:11 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation "municipio" does not exist
+LINE 1: SELECT * FROM municipio
+                      ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 16:29:11 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 16:29:28 UTC] PHP Notice:  Undefined variable: pais in /home/ubuntu/workspace/Modelo/functions_02a.php on line 90
+[23-May-2015 16:29:28 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation "municipio" does not exist
+LINE 1: SELECT * FROM municipio
+                      ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 16:29:28 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 16:29:32 UTC] PHP Notice:  Undefined variable: pais in /home/ubuntu/workspace/Modelo/functions_02a.php on line 90
+[23-May-2015 16:29:32 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation "municipio" does not exist
+LINE 1: SELECT * FROM municipio
+                      ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 16:29:32 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 16:30:45 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 72
+[23-May-2015 16:30:45 UTC] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 72
+[23-May-2015 16:31:12 UTC] PHP Notice:  Undefined variable: pais in /home/ubuntu/workspace/Modelo/functions_02a.php on line 90
+[23-May-2015 16:31:12 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation "municipio" does not exist
+LINE 1: SELECT * FROM municipio
+                      ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 16:31:12 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 16:33:15 UTC] PHP Notice:  Undefined variable: pais in /home/ubuntu/workspace/Modelo/functions_02a.php on line 90
+[23-May-2015 17:13:12 UTC] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/phppgadmin/libraries/lib.inc.php on line 56
+[23-May-2015 17:37:25 UTC] PHP Parse error:  syntax error, unexpected '$ciudad' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/Modelo/Usuario.php on line 17
+[23-May-2015 17:37:27 UTC] PHP Parse error:  syntax error, unexpected '$ciudad' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/Modelo/Usuario.php on line 17
+[23-May-2015 18:50:33 UTC] PHP Parse error:  syntax error, unexpected '$ciudad' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/Modelo/Usuario.php on line 17
+[23-May-2015 18:52:29 UTC] PHP Parse error:  syntax error, unexpected '$ciudad' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/Modelo/Usuario.php on line 17
+[23-May-2015 18:52:33 UTC] PHP Parse error:  syntax error, unexpected '$ciudad' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/Modelo/Usuario.php on line 17
+[23-May-2015 18:53:47 UTC] PHP Parse error:  syntax error, unexpected '$ciudad' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/Modelo/Usuario.php on line 17
+[23-May-2015 18:55:13 UTC] PHP Parse error:  syntax error, unexpected '$ciudad' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/Modelo/Usuario.php on line 17
+[23-May-2015 18:55:43 UTC] PHP Parse error:  syntax error, unexpected '$ciudad' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/Modelo/Usuario.php on line 17
+[23-May-2015 18:57:31 UTC] PHP Parse error:  syntax error, unexpected '$ciudad' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/Modelo/Usuario.php on line 17
+[23-May-2015 19:00:06 UTC] PHP Parse error:  syntax error, unexpected '$ciudad' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/Modelo/Usuario.php on line 17
+[23-May-2015 19:00:35 UTC] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 91
+[23-May-2015 19:00:35 UTC] PHP Notice:  Undefined offset: 1 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 91
+[23-May-2015 19:01:36 UTC] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 91
+[23-May-2015 19:01:36 UTC] PHP Notice:  Undefined offset: 1 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 91
+[23-May-2015 19:02:16 UTC] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 91
+[23-May-2015 19:02:16 UTC] PHP Notice:  Undefined offset: 1 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 91
+[23-May-2015 19:04:56 UTC] PHP Parse error:  syntax error, unexpected '$ciudad' (T_VARIABLE), expecting function (T_FUNCTION) in /home/ubuntu/workspace/Modelo/Usuario.php on line 17
+[23-May-2015 19:05:20 UTC] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 91
+[23-May-2015 19:05:20 UTC] PHP Notice:  Undefined offset: 1 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 91
+[23-May-2015 19:06:45 UTC] PHP Notice:  Undefined variable: carpeta in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 101
+[23-May-2015 19:06:45 UTC] PHP Fatal error:  Call to a member function crearCarpetas() on a non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 101
+[23-May-2015 19:07:16 UTC] PHP Notice:  Array to string conversion in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 99
+[23-May-2015 19:08:52 UTC] PHP Notice:  Undefined variable: carpeta in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 101
+[23-May-2015 19:08:52 UTC] PHP Fatal error:  Call to a member function crearCarpetas() on a non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 101
+[23-May-2015 19:27:32 UTC] PHP Notice:  Undefined offset: 2 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 91
+[23-May-2015 19:27:32 UTC] PHP Notice:  Undefined offset: 1 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 91
+[23-May-2015 19:27:32 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  invalid input syntax for type date: "--1990-05-25"
+LINE 1: ...asculino', sitio_web='zopp.com', fecha_nacimiento='--1990-05...
+                                                             ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 19:27:32 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 19:46:23 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column reference "id" is ambiguous
+LINE 1: ...INNER JOIN ciudad ON ciudad.id=usuarios.ciudad WHERE id='10'
+                                                                ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 19:46:23 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 19:46:23 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 53
+[23-May-2015 19:47:32 UTC] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/phppgadmin/libraries/lib.inc.php on line 56
+[23-May-2015 19:47:45 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column reference "id" is ambiguous
+LINE 1: ...INNER JOIN ciudad ON ciudad.id=usuarios.ciudad WHERE id='10'
+                                                                ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 19:47:45 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 19:47:45 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 53
+[23-May-2015 19:47:56 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column reference "id" is ambiguous
+LINE 1: ...INNER JOIN ciudad ON ciudad.id=usuarios.ciudad WHERE id='10'
+                                                                ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 19:47:56 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 19:47:56 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 53
+[23-May-2015 19:58:35 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column pais.id does not exist
+LINE 1: SELECT * FROM pais INNER JOIN usuarios ON pais.id = usuarios...
+                                                  ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 19:58:35 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 19:58:35 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 53
+[23-May-2015 19:59:36 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column pais.id does not exist
+LINE 1: SELECT * FROM pais INNER JOIN usuarios ON pais.id = usuarios...
+                                                  ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 19:59:36 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 19:59:36 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 53
+[23-May-2015 20:00:04 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column pais.id does not exist
+LINE 1: SELECT * FROM pais INNER JOIN usuarios ON pais.id = usuarios...
+                                                  ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 20:00:04 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 20:00:04 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 53
+[23-May-2015 20:00:19 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column pais.id does not exist
+LINE 1: SELECT * FROM pais INNER JOIN usuarios ON pais.id = usuarios...
+                                                  ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 20:00:19 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 20:00:19 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 53
+[23-May-2015 20:00:43 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column pais.id does not exist
+LINE 1: SELECT * FROM pais INNER JOIN usuarios ON pais.id = usuarios...
+                                                  ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 20:00:43 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 20:00:43 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 53
+[23-May-2015 20:02:19 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column pais.id does not exist
+LINE 1: SELECT * FROM pais INNER JOIN usuarios ON pais.id = usuarios...
+                                                  ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 20:02:19 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 20:02:19 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 53
+[23-May-2015 20:02:57 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  column pais.id does not exist
+LINE 1: SELECT * FROM pais INNER JOIN usuarios ON pais.id = usuarios...
+                                                  ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[23-May-2015 20:02:57 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[23-May-2015 20:02:57 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 53
+[23-May-2015 20:24:56 UTC] PHP Notice:  Undefined index: accion in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 6
+[23-May-2015 20:24:56 UTC] PHP Notice:  Undefined index: Nombre in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 21
+[23-May-2015 20:24:56 UTC] PHP Notice:  Undefined index: Correo in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 22
+[23-May-2015 20:24:56 UTC] PHP Notice:  Undefined index: Clave in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 23
+[23-May-2015 20:25:15 UTC] PHP Notice:  Undefined index: accion in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 6
+[23-May-2015 20:25:15 UTC] PHP Notice:  Undefined index: Nombre in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 21
+[23-May-2015 20:25:15 UTC] PHP Notice:  Undefined index: Correo in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 22
+[23-May-2015 20:25:15 UTC] PHP Notice:  Undefined index: Clave in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 23
+[23-May-2015 20:25:33 UTC] PHP Notice:  Undefined index: accion in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 6
+[23-May-2015 20:25:33 UTC] PHP Notice:  Undefined index: Nombre in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 21
+[23-May-2015 20:25:33 UTC] PHP Notice:  Undefined index: Correo in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 22
+[23-May-2015 20:25:33 UTC] PHP Notice:  Undefined index: Clave in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 23
+[23-May-2015 20:26:55 UTC] PHP Notice:  Undefined index: accion in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 6
+[23-May-2015 20:26:55 UTC] PHP Notice:  Undefined index: Correo in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 22
+[23-May-2015 20:26:55 UTC] PHP Notice:  Undefined index: Clave in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 23
+[23-May-2015 20:28:33 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 93
+[30-May-2015 16:13:21 UTC] PHP Warning:  mkdir(): No such file or directory in /home/ubuntu/workspace/Modelo/functions_02a.php on line 18
+[30-May-2015 16:13:21 UTC] PHP Warning:  mkdir(): No such file or directory in /home/ubuntu/workspace/Modelo/functions_02a.php on line 20
+[30-May-2015 16:13:21 UTC] PHP Warning:  move_uploaded_file(../uploads/2015/05/agenda.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/Modelo/functions_02a.php on line 21
+[30-May-2015 16:13:21 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/phpsSoxZ4' to '../uploads/2015/05/agenda.jpg' in /home/ubuntu/workspace/Modelo/functions_02a.php on line 21
+[30-May-2015 16:17:50 UTC] PHP Warning:  mkdir(): No such file or directory in /home/ubuntu/workspace/Modelo/functions_02a.php on line 18
+[30-May-2015 16:17:50 UTC] PHP Warning:  mkdir(): No such file or directory in /home/ubuntu/workspace/Modelo/functions_02a.php on line 20
+[30-May-2015 16:17:50 UTC] PHP Warning:  move_uploaded_file(../uploads/2015/05/agenda.jpg): failed to open stream: No such file or directory in /home/ubuntu/workspace/Modelo/functions_02a.php on line 21
+[30-May-2015 16:17:50 UTC] PHP Warning:  move_uploaded_file(): Unable to move '/tmp/php65M0oZ' to '../uploads/2015/05/agenda.jpg' in /home/ubuntu/workspace/Modelo/functions_02a.php on line 21
+[30-May-2015 16:49:53 UTC] PHP Notice:  Undefined index: user in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 52
+[30-May-2015 16:53:56 UTC] PHP Notice:  Undefined index: User in /home/ubuntu/workspace/Vista/mod_usuario.php on line 10
+[30-May-2015 16:53:56 UTC] PHP Notice:  Undefined index: user in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 52
+[30-May-2015 16:53:58 UTC] PHP Notice:  Undefined index: User in /home/ubuntu/workspace/Vista/mod_usuario.php on line 10
+[30-May-2015 16:53:59 UTC] PHP Notice:  Undefined index: user in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 52
+[30-May-2015 16:55:53 UTC] PHP Notice:  Undefined index: User in /home/ubuntu/workspace/Vista/mod_usuario.php on line 10
+[30-May-2015 16:55:58 UTC] PHP Notice:  Undefined index: User in /home/ubuntu/workspace/Vista/mod_usuario.php on line 10
+[30-May-2015 16:56:12 UTC] PHP Notice:  Undefined index: User in /home/ubuntu/workspace/Vista/mod_usuario.php on line 10
+[30-May-2015 16:56:13 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  invalid input syntax for integer: "**"
+LINE 1: ...udad ON ciudad.ciu_id=usuarios.ciudad WHERE usuarios.id='**'
+                                                                   ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[30-May-2015 16:56:13 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[30-May-2015 16:56:13 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:56:17 UTC] PHP Notice:  Undefined index: User in /home/ubuntu/workspace/Vista/mod_usuario.php on line 10
+[30-May-2015 16:56:17 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  invalid input syntax for integer: "**"
+LINE 1: ...udad ON ciudad.ciu_id=usuarios.ciudad WHERE usuarios.id='**'
+                                                                   ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[30-May-2015 16:56:17 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[30-May-2015 16:56:17 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:56:21 UTC] PHP Notice:  Undefined index: User in /home/ubuntu/workspace/Vista/mod_usuario.php on line 10
+[30-May-2015 16:56:21 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  invalid input syntax for integer: "**"
+LINE 1: ...udad ON ciudad.ciu_id=usuarios.ciudad WHERE usuarios.id='**'
+                                                                   ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[30-May-2015 16:56:21 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[30-May-2015 16:56:21 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:56:34 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  invalid input syntax for integer: "10**"
+LINE 1: ...ad ON ciudad.ciu_id=usuarios.ciudad WHERE usuarios.id='10**'
+                                                                 ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[30-May-2015 16:56:34 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[30-May-2015 16:56:34 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:56:44 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  invalid input syntax for integer: "10**"
+LINE 1: ...ad ON ciudad.ciu_id=usuarios.ciudad WHERE usuarios.id='10**'
+                                                                 ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[30-May-2015 16:56:44 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[30-May-2015 16:56:44 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:56:56 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:56:59 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:57:02 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:57:22 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:57:26 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:57:35 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near "RIGHT"
+LINE 1: SELECT * FROM pais INNER RIGHT usuarios ON pai_id = usuarios...
+                                 ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[30-May-2015 16:57:35 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[30-May-2015 16:57:35 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:58:20 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  syntax error at or near "INNER"
+LINE 1: SELECT * FROM pais RIGHT INNER usuarios ON pai_id = usuarios...
+                                 ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[30-May-2015 16:58:20 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[30-May-2015 16:58:20 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:58:58 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:59:04 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 16:59:17 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 55
+[30-May-2015 17:53:09 UTC] PHP Notice:  Undefined index: accion in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 6
+[30-May-2015 17:53:09 UTC] PHP Notice:  Undefined index: Nombre in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 23
+[30-May-2015 17:53:09 UTC] PHP Notice:  Undefined index: Correo in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 24
+[30-May-2015 17:53:09 UTC] PHP Notice:  Undefined index: Clave in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 25
+[30-May-2015 17:55:18 UTC] PHP Notice:  Undefined index: accion in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 6
+[30-May-2015 17:55:18 UTC] PHP Notice:  Undefined index: Nombre in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 23
+[30-May-2015 17:55:18 UTC] PHP Notice:  Undefined index: Correo in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 24
+[30-May-2015 17:55:18 UTC] PHP Notice:  Undefined index: Clave in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 25
+[30-May-2015 17:56:16 UTC] PHP Notice:  Undefined index: accion in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 6
+[30-May-2015 17:56:16 UTC] PHP Notice:  Undefined index: Nombre in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 23
+[30-May-2015 17:56:16 UTC] PHP Notice:  Undefined index: Correo in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 24
+[30-May-2015 17:56:16 UTC] PHP Notice:  Undefined index: Clave in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 25
+[30-May-2015 18:02:48 UTC] PHP Notice:  Undefined index: accion in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 6
+[30-May-2015 18:02:48 UTC] PHP Notice:  Undefined index: Nombre in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 23
+[30-May-2015 18:02:48 UTC] PHP Notice:  Undefined index: Correo in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 24
+[30-May-2015 18:02:48 UTC] PHP Notice:  Undefined index: Clave in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 25
+[30-May-2015 18:03:13 UTC] PHP Notice:  Undefined index: accion in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 6
+[30-May-2015 18:03:13 UTC] PHP Notice:  Undefined index: Nombre in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 23
+[30-May-2015 18:03:13 UTC] PHP Notice:  Undefined index: Correo in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 24
+[30-May-2015 18:03:13 UTC] PHP Notice:  Undefined index: Clave in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 25
+[30-May-2015 18:05:47 UTC] PHP Notice:  Undefined index: accion in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 6
+[30-May-2015 18:05:47 UTC] PHP Notice:  Undefined index: Nombre in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 23
+[30-May-2015 18:05:47 UTC] PHP Notice:  Undefined index: Correo in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 24
+[30-May-2015 18:05:47 UTC] PHP Notice:  Undefined index: Clave in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 25
+[30-May-2015 18:08:50 UTC] PHP Warning:  pg_query(): Query failed: ERROR:  relation "usuario" does not exist
+LINE 1: UPDATE usuario SET estado='false' WHERE id ='23'
+               ^ in /home/ubuntu/workspace/Modelo/Conexion.php on line 18
+[30-May-2015 18:08:50 UTC] PHP Warning:  pg_fetch_assoc() expects parameter 1 to be resource, boolean given in /home/ubuntu/workspace/Modelo/Conexion.php on line 19
+[30-May-2015 19:48:38 UTC] PHP Notice:  Undefined index: User in /home/ubuntu/workspace/Vista/mod_usuario.php on line 10
+[30-May-2015 19:50:31 UTC] PHP Notice:  Undefined index: User in /home/ubuntu/workspace/Vista/mod_usuario.php on line 10
+[01-Jun-2015 18:28:37 UTC] PHP Notice:  Undefined index: User in /home/ubuntu/workspace/Vista/mod_usuario.php on line 10
+[06-Jun-2015 15:40:51 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432? in /home/ubuntu/workspace/Modelo/Conexion.php on line 13
+[06-Jun-2015 16:02:29 UTC] PHP Notice:  Undefined variable: email in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 28
+[06-Jun-2015 16:02:30 UTC] PHP Notice:  Undefined offset: 1 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 29
+[06-Jun-2015 16:02:30 UTC] PHP Warning:  checkdnsrr(): Host cannot be empty in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 29
+[06-Jun-2015 16:02:30 UTC] PHP Notice:  Undefined variable: perfil in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 15:20:21 UTC] PHP Warning:  pg_connect(): Unable to connect to PostgreSQL server: could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432? in /home/ubuntu/workspace/Modelo/Conexion.php on line 13
+[13-Jun-2015 15:33:10 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:33:37 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:33:38 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:35:00 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:35:04 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:35:32 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:35:39 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:37:01 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:37:02 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:38:38 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:38:48 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:45:16 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:50:01 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:51:22 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:53:07 UTC] PHP Parse error:  syntax error, unexpected 'funcion' (T_STRING), expecting variable (T_VARIABLE) in /home/ubuntu/workspace/Modelo/functions_02a.php on line 112
+[13-Jun-2015 15:55:48 UTC] PHP Notice:  Undefined variable: email in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 29
+[13-Jun-2015 15:55:48 UTC] PHP Notice:  Undefined offset: 1 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 30
+[13-Jun-2015 15:56:00 UTC] PHP Notice:  Undefined variable: email in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 29
+[13-Jun-2015 16:02:40 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:02:51 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:02:52 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:02:52 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:02:56 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:06 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:07 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:08 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:08 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:08 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:14 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:14 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:24 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:24 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:30 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:31 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:31 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:32 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:32 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:03:32 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 37
+[13-Jun-2015 16:22:50 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 31
+[13-Jun-2015 16:23:15 UTC] PHP Parse error:  syntax error, unexpected 'var_dump' (T_STRING) in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 31
+[13-Jun-2015 20:08:26 UTC] PHP Notice:  session_start(): ps_files_cleanup_dir: opendir(/var/lib/php5) failed: Permission denied (13) in /home/ubuntu/workspace/phppgadmin/libraries/lib.inc.php on line 56

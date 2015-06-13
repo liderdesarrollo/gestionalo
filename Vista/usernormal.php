@@ -5,9 +5,8 @@
   <html>
     
     <head>
-      <meta charset="utf-8">
+      <link type="text/css" rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/materialize.min.css"  media="screen,projection"/>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-        <link type="text/css" rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/materialize.min.css"  media="screen,projection"/>
         <link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/style.css">
         <link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/gestionalo.css">
         <link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/panel.css">
@@ -19,6 +18,11 @@
       
     <header>
       <div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle"><i class="mdi-navigation-menu"></i></a></div>
+        
+  
+   
+  
+  
         
       <ul id="nav-mobile" class="side-nav fixed nav_side_left">
 				<div class="container-logotype">
@@ -106,17 +110,24 @@
   						<h3 class="name aabb"> Oscar David</h3>
   						<h4 class="profesion aabbb"> Director de empatia</h4>
   							<a class="waves-effect waves-light btn">Administrador</a>
-  						
   				</div>
 				</div>
     	 	<div class="bloquear"><i class="small mdi-action-lock-open"></i></div>
     	 	</div>
-    	 	
-    
         <div class="col s4 aabbc">
-          <div class="row">
+          <div class="fixed-action-btn" style="bottom: 28px;left: 5px;">
+          <a class="btn-floating btn-large red">
+            <i class="large mdi-editor-mode-edit"></i>
+          </a>
+          <ul>
+            <li><a class="btn-floating red" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-editor-insert-chart"></i></a></li>
+            <li><a class="btn-floating yellow darken-1" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-editor-format-quote"></i></a></li>
+            <li><a class="btn-floating green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-editor-publish"></i></a></li>
+            <li><a class="btn-floating blue" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-editor-attach-file"></i></a></li>
+          </ul>
+        </div>
               <div class="col s12">
-                  <h1 class="title_group">INFORMACIÓN BÁSICA</h1>
+                  <h1 class="title_group">INFORMACI&Oacute;N B&Aacute;SICA</h1>
               </div>
               <div class="col s12">
                   <span class="label_group">Oscar David Ramirez Jimenez</span>
@@ -131,48 +142,11 @@
                   <span class="label_caption">Cumpleaños</span>
               </div>
               <div class="col s12">
-                  <span class="label_group">oscardavid@zoppagency.com</span>
-                  <span class="label_caption">Correo</span>
-              </div>
-              <div class="col s12">
                   <span class="label_group">Director de Empatia</span>
                   <span class="label_caption">Cargo</span>
               </div>
-              <div class="col s12">
-                  <h1 class="title_group">PLAN MENSUAL Y PAGOS</h1>
-              </div>
-              <div class="col s12">
-                  <span class="label_group">*** *** *** *** 004</span>
-                  <span class="label_caption">Master card</span>
-              </div>
-              <div class="col s12">
-                  <span class="label_group">Tienes una suscripcion de 10 personas  una suscripcion de 10 personas  una suscripcion de 10 personas  una suscripcion de 10 personas </span>
-              </div>
-              <div class="col s12">
-                  <div class="row"> 
-                    <div class="col s6"><a class="waves-effect waves-light btn">Cambiar Tarjeta</a></div>
-                    <div class="col s6"><a class="waves-effect waves-light btn">Cambiar Plan</a></div>
-                  </div>
-              </div>
-          </div>
-          <div class="fixed-action-btn" style="bottom: 10px;  right: 0;  left: 10px;">
-          <a class="btn-floating btn-large red">
-            <i class="large mdi-editor-mode-edit"></i>
-          </a>
-          <ul>
-            <li><a class="btn-floating red" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-editor-insert-chart"></i></a></li>
-            <li><a class="btn-floating yellow darken-1" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-editor-format-quote"></i></a></li>
-            <li><a class="btn-floating green" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-editor-publish"></i></a></li>
-            <li><a class="btn-floating blue" style="transform: scaleY(0.4) scaleX(0.4) translateY(40px); opacity: 0;"><i class="large mdi-editor-attach-file"></i></a></li>
-          </ul>
         </div>
-              
-        </div>
-    	 	
-    	 	
-    	 	
     	 </div>
-    	
     </main>    
     
            
@@ -181,5 +155,6 @@
            
     <script src="<?= PUBLIC_FOLDER ?>js/materialize.js"></script>
     <script type="text/javascript" src="<?= PUBLIC_FOLDER ?>js/app.js"></script>
+           
     </body>
   </html>

@@ -13,7 +13,8 @@ class Usuario {
     $departamento,
     $estado,
     $correo,
-    $clave;
+    $clave,
+    $ciudad;
 
     function __construct($id,
             $nombre,
@@ -27,7 +28,8 @@ class Usuario {
             $departamento,
             $estado,
             $correo,
-            $clave) {      
+            $clave,
+            $ciudad) {      
         
         $this->nombre =  $nombre;
         $this->apellido =  $apellido;
@@ -42,6 +44,7 @@ class Usuario {
         $this->correo =   $correo;
         $this->id = $id;
         $this->clave = $clave;
+        $this->ciudad  = $ciudad;
     }
 
     public function getEstado() {
@@ -93,6 +96,10 @@ class Usuario {
 
     public function getClave(){
         return $this->clave;
+    }
+    
+    public function getCiudad(){
+        return $this->ciudad;
     }
 
 }

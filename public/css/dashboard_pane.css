@@ -66,6 +66,7 @@ img.imagenblur {
   width: 100%;
   height: 100%;
   -webkit-filter: blur(5px);
+  transform: scale(1.1);
 }
 i.small {
   background: white;
@@ -73,7 +74,7 @@ i.small {
 }
 h3.name.aabb {
   font-size: 3em;
-  color: #3e4a54;
+  color: white;
 }
 .image_profile {
   width: 46px;
@@ -86,7 +87,7 @@ h3.name.aabb {
   height: 44px;
 }
 h4.profesion.aabbb {
-  color: #3e4a54;
+  color: white;
 }
 a.waves-effect.waves-light.btn {
   background-color: #1e2842;
@@ -101,4 +102,27 @@ a.waves-effect.waves-light.btn {
 }
 .row.abb div {
   margin: 11px;
+}
+a.btn-floating.btn-large.red {
+  background: #1d2841 !important;
+}
+.fixed-action-btn {
+  position: absolute !important;
+    width: 57px;
+}
+.col.s8.fondo {
+  height: 94vh !important;
+  overflow: hidden;
+}
+.col.s4.aabbc {
+  height: 93vh !important;
+  position: relative;
+}
+main {
+  height: 100vh;
+  overflow: hidden;
+}
+.col.s4.aabbc .s12 {
+  margin: 12px;
+  position: relative;
 }

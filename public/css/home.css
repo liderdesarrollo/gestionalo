@@ -69,7 +69,7 @@ nav .brand-logo {
   background-color: white;
   box-sizing: border-box;
 }
-.navigation .responsive-iresponsive-img{transition:;}
+.navigation .responsive-iresponsive-img{transition:.5s;}
 .navigation .menu-ges nav{padding: 0;}
 .navigation .menu-ges nav ul{height: 100%;}
 .navigation .menu-ges nav ul li{margin-top: 0; height: 100%;}
@@ -81,7 +81,8 @@ nav .brand-logo {
   color: #00ccc8;
 }
 .parallax-container {
-  height: 70vh;
+  height: 100%;
+  z-index: 99;
 }
 .files {
   height: 100%;
@@ -98,7 +99,12 @@ img {
   color: white;
   text-align: center;
 }
-.message h2{font-size: 30px;}
+.message h2{
+  font-size: 42px;
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 200;
+}
 .message h6{font-size: 12px;}
 .f_register{
   background-color: rgba(128, 128, 128, 0.12);
@@ -146,9 +152,22 @@ img {
 .shadow .menu-ges nav ul {height:100%;}
 .shadow .menu-ges nav ul li{margin-top: 0; padding: 0;}
 .shadow .menu-ges nav ul li a{ padding: .35em 1em 0;display: block; height: 90%;margin-top: .15em;}
-.shadow .logIn,.shadow .signUp{margin-top: .15em;}
-@media (max-width: 1200px) {
-  .navigation {
-    padding: 0 4.5%;
+.shadow .logIn,.shadow .signUp{margin-top: .55em; padding: .45rem 1rem;line-height: 1;border-radius: 10px;height: inherit;}
+.files_content{padding: 18% 8% 0;}
+.files_content h1,
+.files_content p,
+.files_content a{line-height: 1.5;}
+.files_content h1{font-size: 1.5rem; color: white;}
+.files_content p{font-size: 16px; color: white;}
+.files_content a{font-size: 14px; color: #26A69A;}
+
+@media (min-width: 1200px) {
+  .navigation nav {
+    padding: 0 15% 0 16%;
+  }
+}
+@media (max-width: 1240px) {
+  .navigation nav {
+    padding: 0 8%;
   }
 }

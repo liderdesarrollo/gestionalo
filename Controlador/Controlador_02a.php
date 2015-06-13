@@ -11,15 +11,39 @@ switch ($accion) {
 	case 2: cargar_paises(); break;
 	case 3: cargar_departamentos(); break;
 	case 4: cargar_ciudades(); break;
+	case 5: modificar_usuario(); break;
+	case 6: cargar_usuarios(); break;
+	case 7: eliminar_usuario(); break;
+	case 8: insertar_archivo(); break;
 	default: echo "Error en datos!"; break;
 }
 //0- insertar usuarios
 function insertar_usuarios(){
     include("../Modelo/Usuario.php"); //clase usuarios
+    $controller = new Utils();
     
 	$nombre =  $_POST['Nombre'];
     $correo =   $_POST['Correo'];
     $clave =   md5($_POST['Clave']);
+    
+    //dominios publicos: gmail, hotmail, yahoo, live, outlook, box 
+    $domain = explode('@', $correo);
+    $dom_public = explode('.',$domain[1]);
+    
+    if (checkdnsrr($domain[1])!='') {
+        if($dom_public[0]=='gmail' || $dom_public[0]=='hotmail' || $dom_public[0]=='yahoo' || $dom_public[0]=='live' || $dom_public[0]=='outlook' || $dom_public[0]=='box'){
+            $perfil='Administrador';
+        }
+        else {
+           $dominio = $controller->valida_dominio($domain[1]);
+           if($dominio[0]["dom_existe"]>0){
+               $perfil="Usuario";
+           }
+           else {
+               $perfil='Administrador';
+           }
+        }
+    }
     
     $usuario = new Usuario('',
                             $nombre, 
@@ -29,15 +53,14 @@ function insertar_usuarios(){
     						'', 
     						'', 
     					    '', 
-    						'', 
+    						$perfil, 
     						'', 
     						'', 
     						$correo,
-    						$clave);
-    $controller = new Utils();
+    						$clave,
+    						'');
     $response = $controller->insertarUsuario($usuario);
-
-    if($response!=false){
+    if($response!=false){ /* NOTA: FALTA MENSAJE DE RESPUESTA DESPUES DE INSERTAR*/
         echo "Usuario registrado";
     }
     else {
@@ -46,17 +69,125 @@ function insertar_usuarios(){
 }
 //1- cargar datos por usuario
 function datos_por_usuario(){
+    $usuario = $_POST['user'];
     $controller = new Utils();
-    $datos  = $controller->cargarDatosusuario('');
+    $datos  = $controller->cargarDatosusuario($usuario);
     echo json_encode($datos[0]);
 }
 //2- cargar paises
 function cargar_paises(){
     $controller = new Utils();
     $datos  = $controller->cargarPaises();
-    echo json_encode($datos[0]);
+    echo json_encode($datos);
+}
+//3- cargar departamentos
+function cargar_departamentos(){
+    $pais=$_POST['pais_sel'];
+    $controller = new Utils();
+    $datos  = $controller->cargarDepartamentos($pais);
+    echo json_encode($datos);
+}
+//4- cargar municipios
+function cargar_ciudades(){
+    $dpto=$_POST['dpto_sel'];
+    $controller = new Utils();
+    $datos  = $controller->cargarMunicipio($dpto);
+    echo json_encode($datos);
+}
+//5- modificar usuarios
+function modificar_usuario(){
+    
+    include("../Modelo/Usuario.php"); //clase usuarios
+    
+    $nombre = $_POST["Nombre"];
+    $apellido = $_POST["Apellido"];
+    $genero = $_POST["Genero"];
+    $sitio = $_POST["Sitio"];
+    $pais = $_POST["Pais"];
+    $rol = $_POST["Rol"];
+    $departamento = $_POST["Departamento"];
+    $municipio = $_POST["Ciudad"];
+    $correo = $_POST["Correo"];
+    
+	$fecha = explode('/',$_POST["Fecha"]);
+	$fecha_nacimiento=$fecha[2]."-".$fecha[1]."-".$fecha[0];
+    
+    $archivos_temporales=$_FILES[0];
+	$uploads_dir = '../uploads';
+	$tmp_name = $archivos_temporales["tmp_name"];
+	$name=$archivos_temporales["name"];
+	$size = $archivos_temporales["size"];
+	
+	if($size <= 5242880){
+	    $controller = new Utils();
+		$ruta_img = $controller->crearCarpetas($tmp_name, $name);
+	
+	    $usuario = new Usuario('10',
+                            $nombre, 
+    						$apellido, 
+    						$ruta_img, 
+    					    $genero, 
+    						$sitio, 
+    						$fecha_nacimiento, 
+    					    $pais, 
+    						$rol, 
+    						$departamento, 
+    						'1', 
+    						$correo,
+    						'',
+    						$municipio);
+    						
+        $response = $controller->modificarusuario($usuario);
+        echo "Datos de usuario modificados";
+	}
+	else {
+		echo "El peso del archivo debe ser igual a menor a 5MB, seleccione otra imagen.";	
+	}
+}
+//6- listar usuarios
+function cargar_usuarios(){
+    $controller = new Utils();
+    $datos = $controller->cargarDatosusuario('');
+    echo json_encode($datos);
+}
+//7- eliminar usuarios
+function eliminar_usuario(){
+    $usuario = $_POST['user'];
+    $controller = new Utils();
+    $datos = $controller->eliminarUsuario($usuario);
+    echo json_encode($datos);
 }
 
-
+//8- insertar archivos
+function insertar_archivo(){
+    include("../Modelo/Archivo.php"); //clase archivo
+    include("../Modelo/Version.php"); //clase version
+    
+    $nombre = $_POST["Nombre"];
+    
+	$fecha = date('Y-m-d');
+    
+    $archivos_temporales=$_FILES[0];
+	$uploads_dir = '../uploads';
+	$tmp_name = $archivos_temporales["tmp_name"];
+	$name=$archivos_temporales["name"];
+	$size = $archivos_temporales["size"];
+	
+	if($size <= 5242880){
+	    $controller = new Utils();
+		//$ruta_img = $controller->crearCarpetas($tmp_name, $name);
+	    $num_file = $controller->ultimoArchivo();
+	    
+	    
+	    $archivo = new Archivo('','1',$name,'1');
+	    
+    						
+        $response = $controller->modificarusuario($usuario);
+        echo "Datos de usuario modificados";
+	}
+	else {
+		echo "El peso del archivo debe ser igual a menor a 5MB, seleccione otra imagen.";	
+	}
+}
 
 ?>
