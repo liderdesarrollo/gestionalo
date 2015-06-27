@@ -193,9 +193,9 @@ function insertar_archivo(){
         
         //validar si el archivo existe ya en el equipo se coloca una version
         $existe_archivo = $controller->validarArchivoEquipo(str_replace(' ','_',$name));
-        var_dump($existe_archivo[0]["num_archivo"]);
         
-            /*$ruta_file = $controller->crearCarpetas($tmp_name, $name);
+        if(count($existe_archivo)==0){
+            $ruta_file = $controller->crearCarpetas($tmp_name, $name);
         	
             $archivo = new Archivo('','1',str_replace(' ','_',$name),'1');
             $response_file = $controller->insertarArchivo($archivo);
@@ -203,7 +203,14 @@ function insertar_archivo(){
             $ultimo  = $controller->ultimoArchivo();
             
             $version = new Version('','10',$ultimo[0]['id_archivo'],$ruta_file,$fecha,$nombre);
-            $response_version = $controller->insertarVersion($version);*/
+            $response_version = $controller->insertarVersion($version);
+        }
+        else {
+            $id_file = $existe_archivo[0]["id"];
+            $ruta_file = $controller->crearCarpetas($tmp_name, $name);
+            $version = new Version('','10',$id_file,$ruta_file,$fecha,$nombre);
+            $response_version = $controller->insertarVersion($version);
+        }
 	}
     
 }

@@ -2032,3 +2032,6 @@ LINE 1: ...suario,id_archivo,ruta,fecha,descripcion) VALUES ('', '6', '...
 [27-Jun-2015 14:00:39 UTC] PHP Warning:  include(header.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Vista/useradmin.php on line 7
 [27-Jun-2015 14:00:39 UTC] PHP Warning:  include(): Failed opening 'header.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/Vista/useradmin.php on line 7
 [27-Jun-2015 14:21:26 UTC] PHP Notice:  Trying to get property of non-object in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 196
+[27-Jun-2015 14:39:14 UTC] PHP Notice:  Undefined offset: 0 in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 196
+[27-Jun-2015 14:56:03 UTC] PHP Notice:  Undefined variable: ruta_file in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 210
+[27-Jun-2015 14:57:11 UTC] PHP Notice:  Undefined variable: ruta_file in /home/ubuntu/workspace/Controlador/Controlador_02a.php on line 210

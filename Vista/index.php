@@ -7,7 +7,7 @@
 		<title>&copy; Gestiónalo &#153;</title>
  		
 		<!-- Librerias CSS -->
-		<link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/materialize.min.css">
+		<link rel="stylesheet" href="<?= PUBLIC_FOLDER  ?>css/materialize.min.css">
 		<link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/animate.css">
 		<link href="<?= PUBLIC_FOLDER ?>css/jquery.circliful.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -16,9 +16,10 @@
 		<link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/panel.css">
 		<link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/library.css">
 		<link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/dashboard_pane.css">
+		<link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/gestionalo.css">
 		
 		<!-- Librerias JavaScript -->
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 		<script>
 			window.jQuery || document.write('<script src="/maqueta/maqueta/js/vendor/jquery-1.11.1.min.js"><\/script>');
 		</script>
@@ -27,6 +28,8 @@
 		<script src="<?= PUBLIC_FOLDER ?>js/jquery.circliful.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
 		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	    <script src="<?= PUBLIC_FOLDER ?>js/glDatePicker.min.js"></script>
+			
 	</head>
 	<body ng-app="dashboard_app">
  		<div class="main">
@@ -110,6 +113,7 @@
 		     
 		<!-- Scripts -->
 		<script type="text/javascript" src="<?= PUBLIC_FOLDER ?>js/routes_dash.js"></script>
+		<script type="text/javascript" src="<?= PUBLIC_FOLDER ?>js/app.js"></script>
 		<script>
 			
 			$( document ).ready(function() {

@@ -66,7 +66,7 @@ $(document).ready(function(){
 		//cargar informacion del usuario que inicio sesion
 		$.post(rutacontroladora, {accion: 1, user:$(".id_user").text()}, function(result){
 	       var datos = JSON.parse(result);
-	       console.log(datos);
+	       
 	       if(datos.fecha_nacimiento != null){
 	       		var fecha = datos.fecha_nacimiento.split('-');
 	       		var fecha_nacimiento = fecha[2]+"/"+fecha[1]+"/"+fecha[0];

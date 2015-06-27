@@ -139,7 +139,7 @@ class Utils{
     
     //validar si el archivo existe en el equipo
     function validarArchivoEquipo($narc){
-        $this->sql="SELECT COUNT(archivo.id) as num_archivo FROM archivo INNER JOIN versiones ON versiones.id_archivo=archivo.id WHERE archivo.nombre='".$narc."' and archivo.id_equipo='1'";
+        $this->sql="SELECT archivo.id FROM archivo INNER JOIN versiones ON versiones.id_archivo=archivo.id WHERE archivo.nombre='".$narc."' and archivo.id_equipo='1'";
         $lst = $this->con->ejecutarSQL($this->sql);
         return ( $lst );
     }

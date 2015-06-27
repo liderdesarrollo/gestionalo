@@ -1,6 +1,6 @@
- var hom_app = angular.module('gestionalo_app', ['ngRoute', 'ngAnimate']);
+var hom_app = angular.module('gestionalo_app', ['ngRoute', 'ngAnimate']);
 
-var dir_route = "/Vista/templates/";
+var dir_route = "/Vista/templates/"; // Directorio donde estan las plantillas
 
 // configure our routes
 hom_app.config(['$routeProvider','$locationProvider', function($routeProvider,$locationProvider) {
@@ -60,6 +60,8 @@ hom_app.controller('quienes_somos_controller',function($scope) {
     animaciones_qs();
     
     window_scroll();
+    
+    $('title').html("Quiénes Somos - Gestiónalo");
 });
 
 // Controlador del blog
@@ -80,36 +82,7 @@ hom_app.controller('blog_controller',function($scope) {
     
     window_resize();
 
-});
-
-// create the controller and inject Angular's $scope
-hom_app.controller('main', function($scope) {
-    
-    var x = Math.floor((Math.random() * 3) + 1);
-    var animations = ['page-home','page-contact','page-about'];
-    
-    $scope.pageClass = animations[x-1];
-    
-    $('.tooltipped').tooltip({delay: 50});
-    
-    // $('.collapsible').collapsible({
-    //   accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-    // });
-    
-    $('select').material_select();
-    
-    
-    
-    $('.datepicker').pickadate({
-        selectMonths: true, // Creates a dropdown to control month
-        selectYears: 15 // Creates a dropdown of 15 years to control year
-      });
-    
-    $('#btn_profile').unbind('click').click(function(e){
-        e.preventDefault();
-         $('.button-collapse1')[0].click();
-    });
-    
+    $('title').html("Blog - Gestiónalo");
 });
 
 // Método que hace que la barra de navegaciòn de vuelva fixed
