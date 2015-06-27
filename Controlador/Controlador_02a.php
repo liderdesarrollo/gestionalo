@@ -19,7 +19,6 @@ switch ($accion) {
 }
 //0- insertar usuarios
 function insertar_usuarios(){
-    include("../Modelo/Usuario.php"); //clase usuarios
     $controller = new Utils();
     
 	$nombre =  $_POST['Nombre'];
@@ -157,37 +156,55 @@ function eliminar_usuario(){
     $datos = $controller->eliminarUsuario($usuario);
     echo json_encode($datos);
 }
-
 //8- insertar archivos
 function insertar_archivo(){
+   
     include("../Modelo/Archivo.php"); //clase archivo
     include("../Modelo/Version.php"); //clase version
     
     $nombre = $_POST["Nombre"];
-    
-	$fecha = date('Y-m-d');
+    $fecha = date('Y-m-d');
     
     $archivos_temporales=$_FILES[0];
 	$uploads_dir = '../uploads';
 	$tmp_name = $archivos_temporales["tmp_name"];
 	$name=$archivos_temporales["name"];
 	$size = $archivos_temporales["size"];
+	$type = $archivos_temporales["type"];
 	
-	if($size <= 5242880){
-	    $controller = new Utils();
-		//$ruta_img = $controller->crearCarpetas($tmp_name, $name);
-	    $num_file = $controller->ultimoArchivo();
-	    
-	    
-	    $archivo = new Archivo('','1',$name,'1');
-	    
-    						
-        $response = $controller->modificarusuario($usuario);
-        echo "Datos de usuario modificados";
+	//validacion de los archivos: tipo y peso
+	$ban=0;
+	if($size>0){
+    	if($type!='application/x-msdownload' && $type!='application/octet-stream' && $type!='text/css' && $type!='text/plain' && $type!='text/html' && $type!='application/javascript' && $type!=''){
+    	   if($type == "video/x-msvideo" || $type == "video/mpeg" || $type == "video/quicktime" || $type == "application/vnd.rn-realmedia" || $type == "video/x-ms-wmv" || $type == "video/mp4" || $type == "application/x-shockwave-flash" || $type=="video/avi" || $type==""){
+    	        if($size <= 209715200){
+    	            $ban++;
+    	        }
+    	   }
+    	   else {
+    	        if($size <= 104857600){
+    	            $ban++;
+    	        }
+    	   }
+    	}
 	}
-	else {
-		echo "El peso del archivo debe ser igual a menor a 5MB, seleccione otra imagen.";	
+	if($ban>0){
+        $controller = new Utils();
+        
+        //validar si el archivo existe ya en el equipo se coloca una version
+        $existe_archivo = $controller->validarArchivoEquipo(str_replace(' ','_',$name));
+        var_dump($existe_archivo[0]["num_archivo"]);
+        
+            /*$ruta_file = $controller->crearCarpetas($tmp_name, $name);
+        	
+            $archivo = new Archivo('','1',str_replace(' ','_',$name),'1');
+            $response_file = $controller->insertarArchivo($archivo);
+            
+            $ultimo  = $controller->ultimoArchivo();
+            
+            $version = new Version('','10',$ultimo[0]['id_archivo'],$ruta_file,$fecha,$nombre);
+            $response_version = $controller->insertarVersion($version);*/
 	}
+    
 }
-
 ?>

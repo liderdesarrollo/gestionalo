@@ -14,7 +14,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Gestionalo -- Moderns App</title>
+        <title>Gestinalo -- Moderns App</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
@@ -37,7 +37,7 @@
         <script src="<?= PUBLIC_FOLDER ?>js/materialize.min.js"></script>
         <script src="<?= PUBLIC_FOLDER ?>js/jquery.viewportchecker.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-    		<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+    		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
     		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.13/angular-animate.js"></script>
         
         <!--<script>window.history.pushState(null,null,"/!#login");</script>-->
@@ -177,6 +177,14 @@
         <script src="<?= PUBLIC_FOLDER ?>js/actions.js"></script>
         <script src="<?= PUBLIC_FOLDER ?>js/routes.js"></script>
 
-
+    <script type="text/javascript" id="dclg-chat-indicators-embedder-5b8cf3a4-b0f0-13e9-3737-d5a159268ae6" class="dclg-chat-indicators-async-script-loader">
+          var s = document.createElement('script');
+          s.type = 'text/javascript';
+          s.async = true;
+          s.src = 'http://chat-liderdesarrollo.c9.io/logic.js';
+          var embedder = document.getElementById('dclg-chat-indicators-embedder-5b8cf3a4-b0f0-13e9-3737-d5a159268ae6');
+          embedder.parentNode.insertBefore(s, embedder);
+        </script>
+        
     </body>
 </html>

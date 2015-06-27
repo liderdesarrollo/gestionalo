@@ -95,6 +95,9 @@ a.waves-effect.waves-light.btn {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 15px;
+  margin:3%;
+  width: 42%;
+
 }
 .row.abb {
   position: relative;
@@ -104,11 +107,18 @@ a.waves-effect.waves-light.btn {
   margin: 11px;
 }
 a.btn-floating.btn-large.red {
-  background: #1d2841 !important;
+  background: rgba(1, 117, 178, 0.83) !important;
 }
 .fixed-action-btn {
   position: absolute !important;
-    width: 57px;
+  left: 0%;
+  margin: auto;
+  top: -2px;
+  bottom: 0!important;
+  right: inherit;
+  display: inline;
+  width: 35px;
+  transform: scale(.8);
 }
 .col.s8.fondo {
   height: 94vh !important;
@@ -121,8 +131,81 @@ a.btn-floating.btn-large.red {
 main {
   height: 100vh;
   overflow: hidden;
+    background: #f6f6f6;
 }
 .col.s4.aabbc .s12 {
   margin: 12px;
   position: relative;
+}
+.otro{
+    position: relative;
+      padding-left: 1.7em;
+  position: relative;
+  margin-bottom: .7rem;
+  color: white;
+  font-size: 2rem;
+}
+.flotante:after{
+    content: "+";
+  background: rgb(19, 157, 159);
+  border-radius: 50%;
+  padding: .55em .62em;
+  line-height: 1rem;
+  font-weight: bold;
+  color: white;
+  font-size: 1.3rem;
+  position: absolute;
+  right: 1.2em;
+  cursor: pointer;
+  top: 5px;
+    font-family: sans-serif;
+}
+.buttons {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+a.waves-effect.waves-light.btn.public {
+  background: #fafafa;
+  color: #818181;
+}
+a.waves-effect.waves-light.btn.private {
+  background: #36b7d9;
+  color: #f9fcfe;
+}
+.boton {
+  border-radius: 6px !important;
+}
+.boton_access{
+  position: relative;
+}
+.flotan{
+  position: static !important;
+  margin:auto;
+}
+.mitad {
+  width: 74%;
+  margin: auto;
+  position:relative;
+}
+.contenido.row {
+  font-size: 12px;
+}
+.b4 h5, .b5 h5 {
+  font-size: 11px;
+}
+input.comment {
+  width: 680px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  height: 34px;
+  background: #7fcbe5;
+  border-style: none;
+}
+.input {
+  position: relative;
+}
+a.btn-floating.btn-large.red {
+  width: 35.5px !important;
+  height: 35.5px !important;
 }

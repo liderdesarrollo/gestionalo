@@ -7,20 +7,7 @@
 <html>
 <head>
 	<title> Gestionalo </title>
-	<link rel="stylesheet" type="text/css" href="<?= PUBLIC_FOLDER ?>css/styles.css">
-	<link rel="stylesheet" type="text/css" href="<?= PUBLIC_FOLDER ?>css/home.css">
-
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-	<link href="<?= PUBLIC_FOLDER ?>css/jquery.circliful.css" rel="stylesheet" type="text/css" />
-
-	<!-- <link href="http://{$data[url_path]}css/materialize.css" rel="stylesheet" type="text/css" />-->
-
-	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-
-	<script src="<?= PUBLIC_FOLDER ?>js/jquery.circliful.min.js"></script>
-
-	<!-- <script src="http://{$data[url_path]}js/materialize.js"></script> -->
+	
 
 </head>
 <body>
@@ -264,7 +251,7 @@
 </body>
 <script>
 $( document ).ready(function() {
-	$('#myStat2').circliful();
+	
 	$('.menu h3').click(function(){
 		$('.menu-list').slideToggle("50");
 	});

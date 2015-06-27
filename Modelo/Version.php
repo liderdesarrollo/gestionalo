@@ -5,14 +5,14 @@ class Version {
     $usuario,
     $archivo,
     $ruta,
-    $fecha
+    $fecha,
     $descripcion;
 
     function __construct($id,
                         $usuario,
                         $archivo,
                         $ruta,
-                        $fecha
+                        $fecha,
                         $descripcion) {      
         
         $this->id =  $id;
@@ -28,7 +28,7 @@ class Version {
     }
     
     public function getUsuario() {
-        return $this->archivo;
+        return $this->usuario;
     }
 
     public function getArchivo() {

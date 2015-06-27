@@ -11,10 +11,10 @@ class Archivo {
                     $nombre,
                     $estado) {      
         
-        $this->nombre =  $id;
-        $this->apellido =  $equipo;
-        $this->imagen =  $nombre;
-        $this->genero =  $estado;
+        $this->id =  $id;
+        $this->equipo =  $equipo;
+        $this->nombre =  $nombre;
+        $this->estado =  $estado;
     }
 
     public function getId() {

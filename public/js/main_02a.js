@@ -236,8 +236,8 @@ $(document).ready(function(){
 	}
 	
 	//insertar 
-	$(".form-ins-documento").submit(function(){
-		var data = new FormData(document.getElementById('file-imagen')[0]);
+	$("#btn-ins-archivo").click(function(){
+		var data = new FormData(document.getElementById('file-archivo'));
 		$.each($('input[name^="archivo"]')[0].files, function(i, file) {
 			data.append(i, file);
 		});
@@ -245,6 +245,7 @@ $(document).ready(function(){
 		data.append("accion",'8');
 		
 		$.ajax({
+			type: 'POST',
 			url: rutacontroladora,
 			data: data,
 			contentType: false,

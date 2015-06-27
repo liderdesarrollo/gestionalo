@@ -118,13 +118,30 @@ class Utils{
         $lst = $this->con->ejecutarSQL($this->sql);
         return ($lst);
     }
-    
     //ultimo numero de archivo insertado
     function ultimoArchivo(){
         $this->sql = "SELECT MAX(id) as id_archivo FROM archivo";
         $lst = $this->con->ejecutarSQL($this->sql);
         return ( $lst );
     }
-
+    //insertar nuevo archivo
+    function insertarArchivo($ar){
+        $this->sql = "INSERT INTO archivo (id_equipo,nombre,estado) VALUES ('".$ar->getEquipo()."', '".$ar->getNombre()."', '".$ar->getEstado()."')";
+        $lst = $this->con->ejecutarSQL($this->sql);
+        return ( $lst );
+    }
+    //insertar version de archivo
+    function insertarVersion($ve){
+        $this->sql = "INSERT INTO versiones (id_usuario,id_archivo,ruta,fecha,descripcion) VALUES ('".$ve->getUsuario()."', '".$ve->getArchivo()."', '".$ve->getRuta()."', '".$ve->getFecha()."', '".$ve->getDescripcion()."')";
+        $lst = $this->con->ejecutarSQL($this->sql);
+        return ( $lst );
+    }
+    
+    //validar si el archivo existe en el equipo
+    function validarArchivoEquipo($narc){
+        $this->sql="SELECT COUNT(archivo.id) as num_archivo FROM archivo INNER JOIN versiones ON versiones.id_archivo=archivo.id WHERE archivo.nombre='".$narc."' and archivo.id_equipo='1'";
+        $lst = $this->con->ejecutarSQL($this->sql);
+        return ( $lst );
+    }
 }
 ?>

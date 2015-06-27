@@ -8,9 +8,9 @@
 	
 	<form class="form-ins-documento">
 		Subir archivo:
-		<input type="file" id="file-imagen" name="archivo[]" multiple/><br>
+		<input type="file" id="file-archivo" name="archivo[]" multiple/><br>
 		Descripcion: <textarea name="file_name" id="file_name"></textarea><br>
-		<button name=="btn-ins-archivo" id="btn-ins-archivo">Aceptar</button>
+		<button name=="btn-ins-archivo" id="btn-ins-archivo" type="button">Aceptar</button>
 	
 	</form>
 
