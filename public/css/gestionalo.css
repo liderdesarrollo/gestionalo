@@ -20,6 +20,7 @@ span.label_caption {
   color: rgb(146, 150, 154);
   line-height: 0.3;
   font-size: 17px;
+    margin-top: 8px;
 }
 
 .label_group {
@@ -27,7 +28,7 @@ span.label_caption {
   width: 100%;
   color: rgb(20, 41, 62);
   font-weight: bold;
-  font-size: 13px;;
+  font-size: 16px;
 }
 
 .core.border.monyear {
@@ -58,5 +59,13 @@ span.label_caption {
   margin: auto;
   right: 0;
   bottom: 0;
+}
+.datos_info {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  bottom: 0px;
+  height: 384px;
+  margin: auto;
 }
 

@@ -9,6 +9,9 @@
 		<!-- Librerias CSS -->
 		<link rel="stylesheet" href="<?= PUBLIC_FOLDER  ?>css/materialize.min.css">
 		<link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/animate.css">
+		<link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/styles/glDatePicker.default.css">
+		<link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/styles/glDatePicker.darkneon.css">
+		<link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/styles/glDatePicker.flatwhite.css">
 		<link href="<?= PUBLIC_FOLDER ?>css/jquery.circliful.css" rel="stylesheet" type="text/css" />
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 		

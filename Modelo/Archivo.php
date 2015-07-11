@@ -2,27 +2,26 @@
 class Archivo {
     
     public $id,
-    $equipo,
     $nombre,
-    $estado;
+    $estado,
+    $tarea,
+    $subtarea;
 
     function __construct($id,
-                    $equipo,
                     $nombre,
-                    $estado) {      
+                    $estado,
+                    $tarea,
+                    $subtarea) {      
         
         $this->id =  $id;
-        $this->equipo =  $equipo;
         $this->nombre =  $nombre;
         $this->estado =  $estado;
+        $this->tarea =  $tarea;
+        $this->subtarea =  $subtarea;
     }
 
     public function getId() {
         return $this->id;
-    }
-    
-    public function getEquipo() {
-        return $this->equipo;
     }
 
     public function getNombre() {
@@ -31,6 +30,14 @@ class Archivo {
 
     public function getEstado() {
         return $this->estado;
+    }
+    
+    public function getTarea() {
+        return $this->tarea;
+    }
+    
+    public function getSubtarea() {
+        return $this->subtarea;
     }
 }
 

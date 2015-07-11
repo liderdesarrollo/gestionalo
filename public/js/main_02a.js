@@ -255,5 +255,100 @@ $(document).ready(function(){
 			}
 		});
 	});
+	
+	//cargar archivos
+	if( $(".form-list-files").length > 0){
+		//mostrar ultima version
+		$.post(rutacontroladora, {accion: 9, Tbl:'ultimo', Tarea:'1'}, function(result){
+	    	var datos = JSON.parse(result);
+			$(".file-ppal").html("<div>"+datos[0]['descripcion']+"</div><a href='"+rutageneral+"/"+datos[0]['ruta']+"'>Descargar</a><br><div>"+datos[0]['fecha']+"</div>")
+		});
+		//mostrar versiones por fecha
+		$.post(rutacontroladora, {accion: 9, Tbl:'todas', Tarea:'1'}, function(result){
+	    	var datos = JSON.parse(result);
+	    	console.log(datos);
+	    	for (var i=0; i <= datos.length; i++ ) {
+	    		$(".file-versions").append("<div>"+datos[i]['descripcion']+"</div><a href='"+rutageneral+"/"+datos[i]['ruta']+"'>Descargar</a><br><div>"+datos[i]['fecha']+"</div><br>");
+	    	}
+		});
+	}
+	
+	//insertar areas de empresa
+	$("#btn-ins-area").click(function() {
+	    var nombre = $("#ar_nombre").val();
+	    var descripcion = $("#ar_descripcion").val();
+	    $.ajax({
+			type: 'POST',
+			url: rutacontroladora,
+			data: {
+				'Nom' : nombre,
+				'Des' : descripcion,
+				'accion' : '10'
+			},
+			success: function(msj){				
+				location.reload();
+			}
+		});
+	});
+	
+	//cargar tabla con usuarios
+	if($(".list-areas").length){
+		$.post(rutacontroladora, {accion: 11}, function(result){
+	       	var datos = JSON.parse(result);
+			for (var i = 0; i < datos.length; i++) {
+				$(".list-areas tbody").append("<tr><td>"+datos[i].are_id+"</td><td>"+datos[i].are_nombre+"</td><td>"+datos[i].are_descripcion+"</td><td><a href='"+rutageneral+"/Vista/mod_area.php?Area="+datos[i].are_id+"'>modificar</a></td><td><a href='#'><div class='are_iden' data-id='"+datos[i].are_id+"'>eliminar</div></a></td></tr>")
+			}
+			
+			//elimiar usuario 
+			$(".are_iden").click(function(){
+				var tr_delete = this;
+				var retVal = confirm("Realmente desea eliminar el área ?");
+			   	if( retVal == true ){
+				    var id_area= $(this).attr('data-id');
+					$.ajax({
+						type: 'POST',
+						url: rutacontroladora,
+						data: {
+							'area' : id_area,
+							'accion' : '12'
+						},
+						success: function(msj){	
+							setTimeout(function(){
+								$(tr_delete).parent().parent().parent().remove();
+							},1000);
+						}
+					});
+			   	}
+			});
+			
+	    });
+	}
+	
+	if( $(".form-mod-area").length>0){
+		$.post(rutacontroladora, {accion: 13, Area:$(".id_area").text()}, function(result){
+	       	var datos = JSON.parse(result);
+	       	$("#nombre").val(datos[0].are_nombre);
+	       	$("#descripcion").val(datos[0].are_descripcion);
+		});
+	}
+	
+	$("#btn-mod-area").click(function() {
+		var idarea = $(".id_area").text();
+		var nombre = $("#nombre").val();
+	    var descripcion = $("#descripcion").val();
+	    $.ajax({
+			type: 'POST',
+			url: rutacontroladora,
+			data: {
+				'Id' : idarea, 
+				'Nom' : nombre,
+				'Des' : descripcion,
+				'accion' : '14'
+			},
+			success: function(msj){				
+				location.reload();
+			}
+		});
+	});
 
 });

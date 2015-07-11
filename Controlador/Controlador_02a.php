@@ -15,6 +15,12 @@ switch ($accion) {
 	case 6: cargar_usuarios(); break;
 	case 7: eliminar_usuario(); break;
 	case 8: insertar_archivo(); break;
+	case 9: cargar_archivo(); break;
+	case 10: insertar_area(); break;
+	case 11: cargar_areas(); break;
+	case 12: eliminar_area(); break;
+	case 13: cargar_dareas(); break;
+	case 14: modificar_areas(); break;
 	default: echo "Error en datos!"; break;
 }
 //0- insertar usuarios
@@ -213,5 +219,65 @@ function insertar_archivo(){
         }
 	}
     
+}
+//9- listar archivos
+function cargar_archivo(){
+    $controller = new Utils();
+    $tabla=$_POST['Tbl'];
+    if($tabla=='ultimo'){
+        $tarea=$_POST['Tarea'];
+        $datos = $controller->cargarArchivos($tarea);
+        echo json_encode($datos);
+    }
+    else {
+        $subtarea=$_POST['Tarea'];
+        $datos = $controller->cargarArchivos($subtarea);
+        echo json_encode($datos);
+    }
+}
+//10- insertar areas
+function insertar_area(){
+    include("../Modelo/Area.php"); //clase area
+    $controller = new Utils();
+    
+	$nombre =  $_POST['Nom'];
+    $descripcion = $_POST['Des'];
+   
+    $area = new Area('',$nombre,$descripcion,'');
+    						
+    $response = $controller->insertarArea($area);
+}
+//11- listar areas
+function cargar_areas(){
+    $controller = new Utils();
+    $datos = $controller->cargarAreas();
+    echo json_encode($datos);
+}
+//12- eliminar areas
+function eliminar_area(){
+    $area = $_POST['area'];
+    $controller = new Utils();
+    $datos = $controller->eliminarArea($area);
+    echo json_encode($datos);
+}
+//13 - cargar datos de area
+function cargar_dareas(){
+    $ar=$_POST['Area'];
+    $controller = new Utils();
+    $datos = $controller->cargarDatosarea($ar);
+    echo json_encode($datos);
+}
+//14- modificar areas
+function modificar_areas(){
+    include("../Modelo/Area.php"); //clase area
+    $controller = new Utils();
+    
+	$id =  $_POST['Id'];
+	$nombre =  $_POST['Nom'];
+    $descripcion = $_POST['Des'];
+   
+    $area = new Area($id,$nombre,$descripcion,'');
+    						
+    $response = $controller->modificarArea($area);
 }
 ?>

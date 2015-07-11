@@ -282,7 +282,10 @@ li i {
 	flex: 1;
 }
 .container-all {
-	background: #50c1e9;
+	  overflow: hidden;
+}
+.fondo{
+	background:#47b9ec;
 }
 .member {
 	padding: .45em 0 .45em 1rem;
@@ -521,7 +524,7 @@ li i {
 }
 .container-input {
 	background: #0175b2;
-	height: 51px;
+	height: 60px;
 }
 .zone-comment{
 	float: left;
