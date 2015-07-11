@@ -1,4 +1,1 @@
-<?php
-
-header("location: Vista/login.php");
-?>
+<?php header("location: Vista/login.php"); ?>
