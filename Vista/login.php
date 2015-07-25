@@ -15,7 +15,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>Gestinalo -- Moderns App</title>
+        <title>Gestionalo -- Moderns App</title>
         
         <!-- Librerias CSS -->
         <link rel="stylesheet" href="<?= PUBLIC_FOLDER ?>css/materialize.min.css">
@@ -166,8 +166,6 @@
       </div>
       
         <!-- Scripts -->
-        <script src="<?= PUBLIC_FOLDER ?>js/main.js"></script>
-        <script src="<?= PUBLIC_FOLDER ?>js/actions.js"></script>
         <script src="<?= PUBLIC_FOLDER ?>js/routes.js"></script>
         
     </body>

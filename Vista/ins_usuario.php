@@ -13,7 +13,7 @@
 		
 		<input type="password" name="ins_clave" id="ins_clave" placeholder="Contrase&ntilde;a"><br>
 		
-		<button name=="btn-ins-usuario" id="btn-ins-usuario">Aceptar</button>
+		<button name="btn-ins-usuario" id="btn-ins-usuario">Aceptar</button>
 	</form>
 
 
